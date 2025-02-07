@@ -7,4 +7,6 @@ response = requests.get(url)
 
 data = response.text
 
-print(data)
+soup = BeautifulSoup(data, 'html.parser')
+
+print(soup)
