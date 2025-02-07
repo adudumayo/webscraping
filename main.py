@@ -5,4 +5,6 @@ url = "https://books.toscrape.com/"
 
 response = requests.get(url)
 
-print(response)
+data = response.text
+
+print(data)
